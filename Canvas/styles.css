@@ -1,3 +1,7 @@
+@font-face{
+    src: url("ROADWAY_.ttf");
+    font-family: Roadway;
+}
 canvas{
     border: 1px #b5b5b5 solid;
 }

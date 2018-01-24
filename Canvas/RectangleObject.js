@@ -8,4 +8,12 @@ class RectangleObject extends PhysicsObject{
     GetDrawingPosition(){
         return new Vector2D(this.position.x - this.dimensions.x / 2, this.position.y + this.dimensions.y / 2);
     }
+    GetSelectionBoxDrawingPosition(){
+        return this.GetDrawingPosition();
+    }
+
+    GetDimensions(){
+        return this.dimensions;
+    }
+
 }

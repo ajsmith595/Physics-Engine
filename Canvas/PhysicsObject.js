@@ -6,13 +6,24 @@ class PhysicsObject{
             this.acceleration = acceleration;
             this.borderColour = borderColour;
             this.fillColour = fillColour;
+            this.selected = false;
         }
     }
-    
+
     GetDrawingPosition(){
         throw "NotImplementedException:: function 'GetDrawingPosition' has not been implemented into the class '" + this.constructor.name + "'.";
     }
-    
+    GetSelectionBoxDrawingPosition(){
+        throw "NotImplementedException:: function 'GetSelectionBoxDrawingPosition' has not been implemented into the class '" + this.constructor.name + "'.";
+    }
+
+    GetDimensions(){
+        throw "NotImplementedException:: function 'GetDimensions' has not been implemented into the class '" + this.constructor.name + "'.";
+    }
+
+    Select(){
+        this.selected = !this.selected;
+    }
     Update(t){
         //s = u + at
         var newVel = Vector2D.Add(Vector2D.Multiply(this.acceleration, t), this.velocity);
