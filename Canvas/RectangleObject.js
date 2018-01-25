@@ -11,7 +11,9 @@ class RectangleObject extends PhysicsObject{
     GetSelectionBoxDrawingPosition(){
         return this.GetDrawingPosition();
     }
-
+    GetCenter(){
+        return Vector2D.Add(this.GetDrawingPosition(), Vector2D.Multiply(new Vector2D(this.dimensions.x, this.dimensions.y * -1), 1/2));
+    }
     GetDimensions(){
         return this.dimensions;
     }

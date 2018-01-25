@@ -14,4 +14,7 @@ class CircleObject extends PhysicsObject{
     GetDimensions(){
         return new Vector2D(this.radius * 2, this.radius * 2);
     }
+    GetCenter(){
+        return this.GetDrawingPosition();
+    }
 }

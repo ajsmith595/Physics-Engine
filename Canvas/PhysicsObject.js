@@ -16,7 +16,9 @@ class PhysicsObject{
     GetSelectionBoxDrawingPosition(){
         throw "NotImplementedException:: function 'GetSelectionBoxDrawingPosition' has not been implemented into the class '" + this.constructor.name + "'.";
     }
-
+    GetCenter(){
+        throw "NotImplementedException:: function 'GetCenter' has not been implemented into the class '" + this.constructor.name + "'.";
+    }
     GetDimensions(){
         throw "NotImplementedException:: function 'GetDimensions' has not been implemented into the class '" + this.constructor.name + "'.";
     }
